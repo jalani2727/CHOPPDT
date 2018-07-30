@@ -1,10 +1,10 @@
 import React, {component} from 'react';
 
-const Category = () =>{
+const Category = (props) =>{
     return(
         <div>
         <img src=""/>
-        <p>{this.props.state.noSelection}</p>
+        <p>{props.value}</p>
         </div>
     )
 }
