@@ -6,6 +6,7 @@ import Category from './Category Components/Category';
 import CategoryButton from './Category Components/CategoryButton';
 import Ingredient from './Ingredient Components/Ingredient';
 import Rounds from './Rounds Components/Rounds';
+import IngredientButton from './Ingredient Components/IngredientButton';
 
 import LandingPage from './LandingPage';
 
@@ -13,9 +14,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state={
-      noSelection:" ",
+      
 
       categories:[
+        {name: "", img:""},
         {name: "Category1", img:"./img/relevantimage"},
         {name: "Category2", img:"./img/relevantimage"},
         {name: "Category3", img:"./img/relevantimage"},
@@ -26,6 +28,7 @@ class App extends Component {
       ],
 
       ingredients:[
+        {name:"", img:""},
         {name:"Ingredient1", img:"./img/relevantimage"},
         {name:"Ingredient2", img:"./img/relevantimage"},
         {name:"Ingredient3", img:"./img/relevantimage"},
@@ -49,70 +52,65 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
-<div className="LandingPage">
-  <LandingPage/>
-</div>
+<div className="App">
 
-<div className="container-fluid">
-  
+  <div className="LandingPage">
+    <LandingPage/>
+  </div>
+
+  <div className="container-fluid">
     <div id="App">
         <div id="Quote">
             <h1>Who will get CHOPPED?</h1>
         </div>
     </div>
-        
+      
+            {/* Entire mid-section */}
+    <div className= "categoriesAndIngredients">
 
-
-          {/* Entire mid-section */}
-<div className= "categoriesAndIngredients">
-
-    {/* Left Side */}
-  <div className= "Category">
-      <CategoryButton handler={this._setCategory}/>
-      <Category value={this.state.categories.randomCategory}/>
-  </div>
-
-    {/* Right Side */}
-  <div className="Ingredients">
-  <button>Get Ingredients</button>
-      <p>Chicken</p>
-      <Ingredient/>
-      <p>Tikka Masala Sauce</p>
-      <Ingredient/>
-      <p>Jelly Beans</p>
-      <Ingredient/>
-  </div>
-
-</div>
-
-
-          {/* display the three rounds here */}
-          {/* Need them to display different content. Best way? */}
-        
-<div className="Rounds">
-  <section className="Appetizer">
-    <p>Appetizer Round</p>
-    <Rounds/> 
-  </section>
-  <section className="Entree">
-    <p>Entreé Round</p>
-    <Rounds/> 
-  </section>
-  <section className="Dessert">
-    <p>Dessert Round</p>
-    <Rounds/>
-  </section>
-</div>
-
-<footer>
-PROPS TO THE BIG HOMIE, THE FOOD NETWORK &lt;3
-</footer>
-
-
-
-</div>
+      {/* Left Side */}
+      <div className= "Category">
+          <CategoryButton handler={this._setCategory}/>
+          <Category value={this.state.categories[0]}/>
       </div>
+
+      {/* Right Side */}
+      <div className="Ingredients">
+          <IngredientButton handler={this._setIngredients}/>
+          
+          <Ingredient value={this.state.ingredients[0]}/>
+          <Ingredient value={this.state.ingredients[0]}/>
+          <Ingredient value={this.state.ingredients[0]}/>
+          
+      </div>
+
+    </div>
+
+
+            {/* display the three rounds here */}
+            {/* Need them to display different content. Best way? */}
+          
+    <div className="Rounds">
+      <section className="Appetizer">
+        <p>Appetizer Round</p>
+        <Rounds/> 
+      </section>
+      <section className="Entree">
+        <p>Entreé Round</p>
+        <Rounds/> 
+      </section>
+      <section className="Dessert">
+        <p>Dessert Round</p>
+        <Rounds/>
+      </section>
+    </div>
+
+    <footer>
+    PROPS TO THE BIG HOMIE, THE FOOD NETWORK &lt;3
+    </footer>
+
+  </div>
+</div>
     );
   }
 
@@ -127,9 +125,16 @@ PROPS TO THE BIG HOMIE, THE FOOD NETWORK &lt;3
   }
 
   _setIngredients = () => {
-    this.setState({
-
-    })
+    var randomIngredient1 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
+    var randomIngredient2 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
+    var randomIngredient3 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
+    this.setState(
+      {
+        ingredients:
+          [randomIngredient1, randomIngredient2, randomIngredient3],
+        
+      }
+    )
   }
 }
 
