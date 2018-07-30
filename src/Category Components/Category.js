@@ -4,7 +4,7 @@ const Category = (props) =>{
     console.log(props);
     // debugger;
     return(
-        <div>
+        <div className="Category">
         <img src={props.value.img}/>
         <p>{props.value.name}</p>
         </div>

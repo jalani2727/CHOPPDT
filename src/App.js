@@ -17,7 +17,7 @@ class App extends Component {
       
 
       categories:[
-        {name: "", img:""},
+        
         {name: "Category1", img:"./img/relevantimage"},
         {name: "Category2", img:"./img/relevantimage"},
         {name: "Category3", img:"./img/relevantimage"},
@@ -27,8 +27,12 @@ class App extends Component {
         {name: "Category7", img:"./img/relevantimage"}
       ],
 
+      selectedCategories:[
+        {name:"", img:""}
+      ],
+
       ingredients:[
-        {name:"", img:""},
+        
         {name:"Ingredient1", img:"./img/relevantimage"},
         {name:"Ingredient2", img:"./img/relevantimage"},
         {name:"Ingredient3", img:"./img/relevantimage"},
@@ -78,7 +82,7 @@ class App extends Component {
       {/* Left Side */}
       <div className= "Category">
           <CategoryButton handler={this._setCategory}/>
-          <Category value={this.state.categories[0]}/>
+          <Category value={this.state.selectedCategories[0]}/>
       </div>
 
       {/* Right Side */}
@@ -123,22 +127,24 @@ class App extends Component {
 
 
   _setCategory = () => {
+    let newarray=[];
     var randomCategory = this.state.categories[Math.floor(Math.random() * this.state.categories.length)];
+    newarray.push(randomCategory);
     this.setState(
       {
-        categories:[randomCategory]
+        selectedCategories:newarray
       }
     )
   }
 
 _setAllIngredients= () =>{
-   let newarray=[]
+   let newarray=[];
    var randomIngredient1 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
-   newarray.push(randomIngredient1)
+   newarray.push(randomIngredient1);
    var randomIngredient2 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
-   newarray.push(randomIngredient2)
+   newarray.push(randomIngredient2);
    var randomIngredient3 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
-   newarray.push(randomIngredient3)
+   newarray.push(randomIngredient3);
 
   //  pull three randoms ingredients and ut them in new array
   this.setState(
