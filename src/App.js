@@ -38,13 +38,20 @@ class App extends Component {
         {name:"Ingredient7", img:"./img/relevantimage"},
         {name:"Ingredient8", img:"./img/relevantimage"},
         {name:"Ingredient9", img:"./img/relevantimage"},
-        {name:"Ingredient10", img:"./img/releveantimage"},
-        {name:"Ingredient11", img:"./img/releveantimage"},
-        {name:"Ingredient12", img:"./img/releveantimage"},
-        {name:"Ingredient13", img:"./img/releveantimage"},
-        {name:"Ingredient14", img:"./img/releveantimage"},
-        {name:"Ingredient15", img:"./img/releveantimage"}
+        {name:"Ingredient10", img:"./img/relevantimage"},
+        {name:"Ingredient11", img:"./img/relevantimage"},
+        {name:"Ingredient12", img:"./img/relevantimage"},
+        {name:"Ingredient13", img:"./img/relevantimage"},
+        {name:"Ingredient14", img:"./img/relevantimage"},
+        {name:"Ingredient15", img:"./img/relevantimage"}
+      ],
+
+      selectedIngredients:[
+        {name:"", img:""},
+        {name:"", img:""},
+        {name:"", img:""}
       ]
+
     }
   }
   
@@ -65,7 +72,7 @@ class App extends Component {
         </div>
     </div>
       
-            {/* Entire mid-section */}
+      {/* Entire mid-section */}
     <div className= "categoriesAndIngredients">
 
       {/* Left Side */}
@@ -76,11 +83,11 @@ class App extends Component {
 
       {/* Right Side */}
       <div className="Ingredients">
-          <IngredientButton handler={this._setIngredients}/>
+          <IngredientButton handler={this._setAllIngredients}/>
           
-          <Ingredient value={this.state.ingredients[0]}/>
-          <Ingredient value={this.state.ingredients[0]}/>
-          <Ingredient value={this.state.ingredients[0]}/>
+          <Ingredient value={this.state.selectedIngredients[0]}/>
+          <Ingredient value={this.state.selectedIngredients[1]}/>
+          <Ingredient value={this.state.selectedIngredients[2]}/>
           
       </div>
 
@@ -124,18 +131,24 @@ class App extends Component {
     )
   }
 
-  _setIngredients = () => {
-    var randomIngredient1 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
-    var randomIngredient2 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
-    var randomIngredient3 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
-    this.setState(
-      {
-        ingredients:
-          [randomIngredient1, randomIngredient2, randomIngredient3],
-        
-      }
-    )
-  }
+_setAllIngredients= () =>{
+   let newarray=[]
+   var randomIngredient1 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
+   newarray.push(randomIngredient1)
+   var randomIngredient2 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
+   newarray.push(randomIngredient2)
+   var randomIngredient3 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
+   newarray.push(randomIngredient3)
+
+  //  pull three randoms ingredients and ut them in new array
+  this.setState(
+    {
+      selectedIngredients:newarray
+    }
+  )
+}
+
+  
 }
 
 export default App;

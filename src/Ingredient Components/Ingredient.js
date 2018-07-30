@@ -4,7 +4,7 @@ const Ingredient = (props) => {
     console.log(props);
     // debugger;
     return(
-        <div>
+        <div className="ingredient">
         <img src={props.value.img}/>
         <p>{props.value.name}</p>
         </div>
