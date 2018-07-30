@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Category from './Category';
-import Ingredient from './Ingredient';
-import Rounds from './Rounds';
+import Category from './Category Components/Category';
+import Ingredient from './Ingredient Components/Ingredient';
+import Rounds from './Rounds Components/Rounds';
 import LandingPage from './LandingPage';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state={
+      noSelection:" ",
+
       categories:[
         "Category1",
         "Category2",
@@ -19,6 +21,7 @@ class App extends Component {
         "Category6",
         "Category7"
       ],
+
       ingredients:[
         "Ingredient1",
         "Ingredient2",
@@ -64,8 +67,8 @@ class App extends Component {
             {/* Left Side */}
           <div className= "Category">
           <button>Get Categories</button>
-              <p>"Sweet Redemption"</p>
-              <Category/>
+              
+              <Category value={this.state.noSelection}/>
           </div>
             {/* Right Side */}
           <div className="Ingredients">
