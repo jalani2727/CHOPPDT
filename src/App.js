@@ -54,7 +54,26 @@ class App extends Component {
         {name:"", img:""},
         {name:"", img:""},
         {name:"", img:""}
+      ],
+
+      AppetizerRound:[
+        {name:"", img:""},
+        {name:"", img:""},
+        {name:"", img:""}
+      ],
+
+      EntreeRound:[
+        {name:"", img:""},
+        {name:"", img:""},
+        {name:"", img:""}
+      ],
+
+      DessertRound:[
+        {name:"", img:""},
+        {name:"", img:""},
+        {name:"", img:""}
       ]
+      
 
     }
   }
@@ -146,7 +165,7 @@ _setAllIngredients= () =>{
    var randomIngredient3 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
    newarray.push(randomIngredient3);
 
-  //  pull three randoms ingredients and ut them in new array
+ 
   this.setState(
     {
       selectedIngredients:newarray
