@@ -1,7 +1,7 @@
 import React, {component} from 'react';
 
 const Ingredient = (props) => {
-    console.log(props);
+ 
     // debugger;
     return(
         <div className="ingredient">

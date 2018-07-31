@@ -8,7 +8,7 @@ const LandingPage = () => {
                     <div id="landing-text-inner">
                         <h1>CHOPPDT</h1>
                         <h2>Inspired by Food Network's Hit Television series, "Chopped"</h2>
-                        <a href="#images" class="btn" id="view-work">
+                        <a href="#images" className="btn" id="view-work">
                             GET COOKIN'
                         </a>
                     </div>

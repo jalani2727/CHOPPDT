@@ -5,8 +5,9 @@ import './App.css';
 import Category from './Category Components/Category';
 import CategoryButton from './Category Components/CategoryButton';
 import Ingredient from './Ingredient Components/Ingredient';
-import Rounds from './Rounds Components/Rounds';
 import IngredientButton from './Ingredient Components/IngredientButton';
+import Rounds from './Rounds Components/Rounds';
+import SetRound from './Rounds Components/SetRound';
 
 import LandingPage from './LandingPage';
 
@@ -18,13 +19,14 @@ class App extends Component {
 
       categories:[
         
-        {name: "Category1", img:"./img/relevantimage"},
-        {name: "Category2", img:"./img/relevantimage"},
-        {name: "Category3", img:"./img/relevantimage"},
-        {name: "Category4", img:"./img/relevantimage"},
-        {name: "Category5", img:"./img/relevantimage"},
-        {name: "Category6", img:"./img/relevantimage"},
-        {name: "Category7", img:"./img/relevantimage"}
+        {name: "Sandwiches", img:"./img/relevantimage"},
+        {name: "MAKE. IT. SPICY.", img:"./img/relevantimage"},
+        {name: "Would A Small Child Like This?", img:"./img/relevantimage"},
+        {name: "Wok This Way (Wok Mandatory)", img:"./img/relevantimage"},
+        {name: "MAKE. IT. SWEET.", img:"./img/relevantimage"},
+        {name: "Gotta Grill It!", img:"./img/relevantimage"},
+        {name: "Freestyle!", img:"./img/relevantimage"},
+        {name: "Christmas Style", img:"./img/relevantimage"}
       ],
 
       selectedCategories:[
@@ -55,6 +57,8 @@ class App extends Component {
         {name:"", img:""},
         {name:"", img:""}
       ],
+
+
 
       AppetizerRound:[
         {name:"", img:""},
@@ -122,17 +126,28 @@ class App extends Component {
           
     <div className="Rounds">
       <section className="Appetizer">
-        <p>Appetizer Round</p>
-        <Rounds/> 
+        <SetRound handler={this._setRounds}/>
+        <p>Appetizer</p>
+        
+        <Rounds value={this.state.AppetizerRound[0]}/> 
+        <Rounds value={this.state.AppetizerRound[1]}/> 
+        <Rounds value={this.state.AppetizerRound[2]}/> 
+     
       </section>
-      <section className="Entree">
-        <p>Entreé Round</p>
+      {/* <section className="Entree">
+      <SetRound handler={this._setRounds}/>
+        <p>Entree</p>
+        <Rounds/> 
+        <Rounds/> 
         <Rounds/> 
       </section>
       <section className="Dessert">
-        <p>Dessert Round</p>
+      <SetRound handler={this._setRounds}/>
+        <p>Dessert</p>
         <Rounds/>
-      </section>
+        <Rounds/> 
+        <Rounds/> 
+      </section> */}
     </div>
 
     <footer>
@@ -172,6 +187,23 @@ _setAllIngredients= () =>{
     }
   )
 }
+
+_setRounds =() => {
+  let newarray=[];
+  let appetizerIngredient1 = this.state.selectedIngredients[0];
+  newarray.push(appetizerIngredient1)
+  let appetizerIngredient2 = this.state.selectedIngredients[1];
+  newarray.push(appetizerIngredient2)
+  let appetizerIngredient3 = this.state.selectedIngredients[2];
+  newarray.push(appetizerIngredient3)
+
+  this.setState(
+    {
+      AppetizerRound:newarray
+    }
+  )
+}
+
 
   
 }
