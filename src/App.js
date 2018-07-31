@@ -129,9 +129,13 @@ class App extends Component {
         <SetRound handler={this._setRounds}/>
         <p>Appetizer</p>
         
-        <Rounds value={this.state.AppetizerRound[0]}/> 
+        {this.state.AppetizerRound.map((AppetizerRound) => 
+          <Rounds value={AppetizerRound}/>
+        )}
+
+        {/* <Rounds value={this.state.AppetizerRound[0]}/> 
         <Rounds value={this.state.AppetizerRound[1]}/> 
-        <Rounds value={this.state.AppetizerRound[2]}/> 
+        <Rounds value={this.state.AppetizerRound[2]}/>  */}
      
       </section>
       {/* <section className="Entree">
