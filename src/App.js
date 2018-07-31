@@ -126,9 +126,9 @@ class App extends Component {
           
     <div className="Rounds">
       <section className="Appetizer">
-        <SetRound handler={this._setRounds}/>
+        <SetRound handler={()=> this._setRounds("AppetizerRound")}/>
         <p>Appetizer</p>
-        
+
         {this.state.AppetizerRound.map((AppetizerRound) => 
           <Rounds value={AppetizerRound}/>
         )}
@@ -138,20 +138,22 @@ class App extends Component {
         <Rounds value={this.state.AppetizerRound[2]}/>  */}
      
       </section>
-      {/* <section className="Entree">
-      <SetRound handler={this._setRounds}/>
+
+      <section className="Entree">
+      <SetRound handler={()=> this._setRounds("EntreeRound")}/>
         <p>Entree</p>
-        <Rounds/> 
-        <Rounds/> 
-        <Rounds/> 
+        {this.state.EntreeRound.map((EntreeRound) => 
+          <Rounds value={EntreeRound}/>
+        )}
       </section>
+
       <section className="Dessert">
-      <SetRound handler={this._setRounds}/>
+      <SetRound handler={()=> this._setRounds("DessertRound")}/>
         <p>Dessert</p>
-        <Rounds/>
-        <Rounds/> 
-        <Rounds/> 
-      </section> */}
+        {this.state.DessertRound.map((DessertRound) => 
+          <Rounds value={DessertRound}/>
+        )}
+      </section>
     </div>
 
     <footer>
@@ -192,7 +194,7 @@ _setAllIngredients= () =>{
   )
 }
 
-_setRounds =() => {
+_setRounds =(whichRound) => {
   let newarray=[];
   let appetizerIngredient1 = this.state.selectedIngredients[0];
   newarray.push(appetizerIngredient1)
@@ -203,7 +205,7 @@ _setRounds =() => {
 
   this.setState(
     {
-      AppetizerRound:newarray
+      [whichRound]:newarray
     }
   )
 }

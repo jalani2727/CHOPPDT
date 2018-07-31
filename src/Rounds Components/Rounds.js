@@ -1,7 +1,7 @@
 import React, {component} from 'react';
 
 const Rounds = (props) => {
-console.log(props);
+
     return (
       <div>
           <ul>
