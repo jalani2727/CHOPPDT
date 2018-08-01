@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import './LandingPage.css';
 
+import ScrollableAnchor from 'react-scrollable-anchor'
+
+
 const LandingPage = () => {
         return (
             <div className = "landing">
@@ -8,7 +11,7 @@ const LandingPage = () => {
                     <div className = "landing-text-inner">
                         <h1>CHOPPDT</h1>
                         <h2>Inspired by Food Network's Hit Television series, "Chopped"</h2>
-                        <a href="#StartGame" className = "btn view-work">
+                        <a href="#Quote" className = "btn view-work">
                             GET COOKIN'
                         </a>
                     </div>

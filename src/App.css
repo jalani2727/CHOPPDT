@@ -18,8 +18,14 @@
   border-radius: 50px;
   text-decoration: none;
   color: black;
-  transition: background 500ms ease;
+  transition: background 100ms ease;
 }
+.btn:hover{
+  background-color: rgb(223,38,39);
+  color:white;
+}
+
+
 
 .categoriesAndIngredients{
   display: flex;
