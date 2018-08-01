@@ -1,10 +1,10 @@
 .ingredientDisplay {
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(223,38,39);
+    justify-content: space-between;
+    flex-direction: column;
+    
+   
 
     
     height:18vh;
@@ -12,7 +12,7 @@
 }
 .Ingredients {
     width: 50%;
-  height: 75vh;
+  height: 100vh;
   border: 1px solid black;
   border-left: 0;
   border-right: 0;
@@ -30,8 +30,16 @@
     margin-bottom: 2px; */
 }
 
-.ingredientDisplay p {
+.Ingredients p {
     font-size: 33px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(223,38,39);
+
+}
+
+.Ingredients img{
+    width: 50%;
+    height: 100%;
 }
 
 button{

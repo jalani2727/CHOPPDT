@@ -5,7 +5,7 @@ const Category = (props) =>{
     // debugger;
     return(
         <div className="CategoryDisplay">
-        <img src={props.value.img}/>
+        <img src={props.value.img} alt="Click to Start!"/>
         <p>{props.value.name}</p>
         </div>
     )

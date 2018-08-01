@@ -5,13 +5,6 @@ import './App.css';
 // 3rd-Party Components
 import ScrollableAnchor from 'react-scrollable-anchor'
 
-// Images
-// Use the variable names you import in the img: state attribute and they will fuckin appear!
-import test from "./img/Ingredients/Vodka_Shots.jpg";
-
-
-
-
 
 // Components
 import Category from './Category Components/Category';
@@ -23,6 +16,40 @@ import SetRound from './Rounds Components/SetRound';
 
 import LandingPage from './LandingPage';
 
+// Images
+// Use the variable names you import in the img: state attribute and they will appear!
+        // Ingredients
+import vodka from "./img/Ingredients/Vodka_Shots.jpg";
+
+
+
+        // Categories
+import sandwiches from "./img/Categories/sandwiches.jpeg";
+import spicy from "./img/Categories/spicy.jpeg";
+import smallchild from "./img/Categories/smallchild.jpeg";
+import wok from "./img/Categories/wok.jpeg";
+import sweet from "./img/Categories/sweet.jpeg";
+import breakfast from "./img/Categories/breakfast.jpeg";
+import grill from "./img/Categories/grill.jpeg";
+import soup from "./img/Categories/soup.jpeg";
+import healthy from "./img/Categories/healthy.jpeg";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -31,15 +58,15 @@ class App extends Component {
 
       categories:[
         
-        // {name: "Sandwiches!", img:"./img/relevantimage"},
-        // {name: "MAKE. IT. SPICY.", img:"./img/relevantimage"},
-        // {name: "Would A Small Child Like This?", img:"./img/relevantimage"},
-        // {name: "Wok This Way (Wok Mandatory)", img:"./img/relevantimage"},
-        // {name: "MAKE. IT. SWEET.", img:"./img/relevantimage"},
-        // {name: "Gotta Grill It!", img:"./img/relevantimage"},
-        // {name: "Soups", img:"./img/relevantimage"},
-        // {name: "Healthy-Eats", img:"./img/relevantimage"},
-        {name: "Breakfast", img:"./img/Ingredients/Vodka_Shots.jpg"}
+        {name: "Sandwiches!", img:sandwiches},
+        {name: "MAKE. IT. SPICY.", img:spicy},
+        {name: "Would A Small Child Like This?", img:smallchild},
+        {name: "Wok This Way (Wok Mandatory)", img:wok},
+        {name: "MAKE. IT. SWEET.", img:sweet},
+        {name: "Gotta Grill It!", img:grill},
+        {name: "Soups", img:soup},
+        {name: "Healthy-Eats", img:healthy},
+        {name: "Breakfast", img:breakfast}
       ],
 
       selectedCategories:[
@@ -48,86 +75,86 @@ class App extends Component {
 
       ingredients:[
         
-        {name:"Eggplant", img:"./img/relevantimage"},
-        {name:"Bagel", img:"./img/relevantimage"},
-        {name:"Raisins", img:"./img/relevantimage"},
-        {name:"Ginger", img:"./img/relevantimage"},
-        {name:"Parsley", img:"./img/relevantimage"},
-        {name:"Sweet Potato", img:"./img/relevantimage"},
-        {name:"Curry Powder", img:"./img/relevantimage"},
-        {name:"Macaroni & Cheese", img:"./img/relevantimage"},
-        {name:"Tuna", img:"./img/relevantimage"},
-        {name:"Popcorn", img:"./img/relevantimage"},
-        {name:"Carrots", img:"./img/relevantimage"},
-        {name:"Jalapeños", img:"./img/relevantimage"},
-        {name:"Ice Cream Sandwich", img:"./img/relevantimage"},
-        {name:"Radish", img:"./img/relevantimage"},
-        {name:"Baked Beans", img:"./img/relevantimage"},
-        {name:"Frozen Peas", img:"./img/relevantimage"},
-        {name:"Cheerios", img:"./img/relevantimage"},
-        {name:"Cinnamon Toast Crunch", img:"./img/relevantimage"},
-        {name:"Kimchi", img:"./img/relevantimage"},
-        {name:"Ground Beef", img:"./img/relevantimage"},
-        {name:"Tomato Soup", img:"./img/relevantimage"},
-        {name:"Cheetos", img:"./img/relevantimage"},
-        {name:"Canned Icing", img:"./img/relevantimage"},
-        {name:"Canned Chicken Noodle Soup", img:"./img/relevantimage"},
-        {name:"Cool Whip", img:"./img/relevantimage"},
-        {name:"Broccoli", img:"./img/relevantimage"},
-        {name:"Cranberries", img:"./img/relevantimage"},
-        {name:"Instant Potatoes", img:"./img/relevantimage"},
-        {name:"Maple Syrup", img:"./img/relevantimage"},
-        {name:"Insant Ramen", img:"./img/relevantimage"},
-        {name:"Eggos", img:"./img/relevantimage"},
-        {name:"One Human Foot", img:"./img/relevantimage"},
-        {name:"Bananas", img:"./img/relevantimage"},
-        {name:"Lettuce", img:"./img/relevantimage"},
-        {name:"Mayonnaise", img:"./img/relevantimage"},
-        {name:"Oreos", img:"./img/relevantimage"},
-        {name:"White Rice", img:"./img/relevantimage"},
-        {name:"Pasta Noodles", img:"./img/relevantimage"},
-        {name:"Frozen Grapes", img:"./img/relevantimage"},
-        {name:"Black Beans", img:"./img/relevantimage"},
-        {name:"Lentils", img:"./img/relevantimage"},
-        {name:"Quinoa", img:"./img/relevantimage"},
-        {name:"Leftover Item from the Fridge", img:"./img/relevantimage"},
-        {name:"Bacon", img:"./img/relevantimage"},
-        {name:"Brie", img:"./img/relevantimage"},
-        {name:"Gouda", img:"./img/relevantimage"},
-        {name:"Goldfish", img:"./img/relevantimage"},
-        {name:"Zebra Cakes", img:"./img/relevantimage"},
-        {name:"One Hot Pocket", img:"./img/relevantimage"},
-        {name:"Frozen Sausage", img:"./img/relevantimage"},
-        {name:"Ketchup", img:"./img/relevantimage"},
-        {name:"Blackberry Jam", img:"./img/relevantimage"},
-        {name:"Chick Peas", img:"./img/relevantimage"},
-        {name:"Salmon", img:"./img/relevantimage"},
-        {name:"Hot Sauce", img:"./img/relevantimage"},
-        {name:"Sliced Turkey", img:"./img/relevantimage"},
-        {name:"Sliced Pepperoni", img:"./img/relevantimage"},
-        {name:"An Entire Onion", img:"./img/relevantimage"},
-        {name:"Hair from a Shower Drain", img:"./img/relevantimage"},
-        {name:"Pretzels", img:"./img/relevantimage"},
-        {name:"Udon Noodles", img:"./img/relevantimage"},
-        {name:"Apple Cider Vinegar", img:"./img/relevantimage"},
-        {name:"Lemon Curd", img:"./img/relevantimage"},
-        {name:"Spinach", img:"./img/relevantimage"},
-        {name:"Chicken Wings", img:"./img/relevantimage"},
-        {name:"Popcorn Shrimp", img:"./img/relevantimage"},
-        {name:"Entire Pepper", img:"./img/relevantimage"},
-        {name:"Salsa", img:"./img/relevantimage"},
-        {name:"Chicken Breast", img:"./img/relevantimage"},
-        {name:"Frozen French-Fries", img:"./img/relevantimage"},
-        {name:"Maraschino Cherries", img:"./img/relevantimage"},
-        {name:"Beer", img:"./img/relevantimage"},
-        {name:"Cheddar Cheese", img:"./img/relevantimage"},
-        {name:"Coconut Water", img:"./img/relevantimage"},
-        {name:"Walnuts", img:"./img/relevantimage"},
-        {name:"Oatmeal", img:"./img/relevantimage"},
-        {name:"Honey", img:"./img/relevantimage"},
-        {name:"Lemon", img:"./img/relevantimage"},
-        {name:"Vodka", img:"img/Ingredients/Vodka_Shots.jpg"},
-        {name:"Pancake Mix", img:"./img/relevantimage"}
+        // {name:"Eggplant", img:"./img/relevantimage"},
+        // {name:"Bagel", img:"./img/relevantimage"},
+        // {name:"Raisins", img:"./img/relevantimage"},
+        // {name:"Ginger", img:"./img/relevantimage"},
+        // {name:"Parsley", img:"./img/relevantimage"},
+        // {name:"Sweet Potato", img:"./img/relevantimage"},
+        // {name:"Curry Powder", img:"./img/relevantimage"},
+        // {name:"Macaroni & Cheese", img:"./img/relevantimage"},
+        // {name:"Tuna", img:"./img/relevantimage"},
+        // {name:"Popcorn", img:"./img/relevantimage"},
+        // {name:"Carrots", img:"./img/relevantimage"},
+        // {name:"Jalapeños", img:"./img/relevantimage"},
+        // {name:"Ice Cream Sandwich", img:"./img/relevantimage"},
+        // {name:"Radish", img:"./img/relevantimage"},
+        // {name:"Baked Beans", img:"./img/relevantimage"},
+        // {name:"Frozen Peas", img:"./img/relevantimage"},
+        // {name:"Cheerios", img:"./img/relevantimage"},
+        // {name:"Cinnamon Toast Crunch", img:"./img/relevantimage"},
+        // {name:"Kimchi", img:"./img/relevantimage"},
+        // {name:"Ground Beef", img:"./img/relevantimage"},
+        // {name:"Tomato Soup", img:"./img/relevantimage"},
+        // {name:"Cheetos", img:"./img/relevantimage"},
+        // {name:"Canned Icing", img:"./img/relevantimage"},
+        // {name:"Canned Chicken Noodle Soup", img:"./img/relevantimage"},
+        // {name:"Cool Whip", img:"./img/relevantimage"},
+        // {name:"Broccoli", img:"./img/relevantimage"},
+        // {name:"Cranberries", img:"./img/relevantimage"},
+        // {name:"Instant Potatoes", img:"./img/relevantimage"},
+        // {name:"Maple Syrup", img:"./img/relevantimage"},
+        // {name:"Insant Ramen", img:"./img/relevantimage"},
+        // {name:"Eggos", img:"./img/relevantimage"},
+        // {name:"One Human Foot", img:"./img/relevantimage"},
+        // {name:"Bananas", img:"./img/relevantimage"},
+        // {name:"Lettuce", img:"./img/relevantimage"},
+        // {name:"Mayonnaise", img:"./img/relevantimage"},
+        // {name:"Oreos", img:"./img/relevantimage"},
+        // {name:"White Rice", img:"./img/relevantimage"},
+        // {name:"Pasta Noodles", img:"./img/relevantimage"},
+        // {name:"Frozen Grapes", img:"./img/relevantimage"},
+        // {name:"Black Beans", img:"./img/relevantimage"},
+        // {name:"Lentils", img:"./img/relevantimage"},
+        // {name:"Quinoa", img:"./img/relevantimage"},
+        // {name:"Leftover Item from the Fridge", img:"./img/relevantimage"},
+        // {name:"Bacon", img:"./img/relevantimage"},
+        // {name:"Brie", img:"./img/relevantimage"},
+        // {name:"Gouda", img:"./img/relevantimage"},
+        // {name:"Goldfish", img:"./img/relevantimage"},
+        // {name:"Zebra Cakes", img:"./img/relevantimage"},
+        // {name:"One Hot Pocket", img:"./img/relevantimage"},
+        // {name:"Frozen Sausage", img:"./img/relevantimage"},
+        // {name:"Ketchup", img:"./img/relevantimage"},
+        // {name:"Blackberry Jam", img:"./img/relevantimage"},
+        // {name:"Chick Peas", img:"./img/relevantimage"},
+        // {name:"Salmon", img:"./img/relevantimage"},
+        // {name:"Hot Sauce", img:"./img/relevantimage"},
+        // {name:"Sliced Turkey", img:"./img/relevantimage"},
+        // {name:"Sliced Pepperoni", img:"./img/relevantimage"},
+        // {name:"An Entire Onion", img:"./img/relevantimage"},
+        // {name:"Hair from a Shower Drain", img:"./img/relevantimage"},
+        // {name:"Pretzels", img:"./img/relevantimage"},
+        // {name:"Udon Noodles", img:"./img/relevantimage"},
+        // {name:"Apple Cider Vinegar", img:"./img/relevantimage"},
+        // {name:"Lemon Curd", img:"./img/relevantimage"},
+        // {name:"Spinach", img:"./img/relevantimage"},
+        // {name:"Chicken Wings", img:"./img/relevantimage"},
+        // {name:"Popcorn Shrimp", img:"./img/relevantimage"},
+        // {name:"Entire Pepper", img:"./img/relevantimage"},
+        // {name:"Salsa", img:"./img/relevantimage"},
+        // {name:"Chicken Breast", img:"./img/relevantimage"},
+        // {name:"Frozen French-Fries", img:"./img/relevantimage"},
+        // {name:"Maraschino Cherries", img:"./img/relevantimage"},
+        // {name:"Beer", img:"./img/relevantimage"},
+        // {name:"Cheddar Cheese", img:"./img/relevantimage"},
+        // {name:"Coconut Water", img:"./img/relevantimage"},
+        // {name:"Walnuts", img:"./img/relevantimage"},
+        // {name:"Oatmeal", img:"./img/relevantimage"},
+        // {name:"Honey", img:"./img/relevantimage"},
+        // {name:"Lemon", img:"./img/relevantimage"},
+        // {name:"Pancake Mix", img:"./img/relevantimage"}
+        {name:"Vodka", img:vodka}
       ],
 
       selectedIngredients:[
