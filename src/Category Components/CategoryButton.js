@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 
 const CategoryButton = (props) =>{
     return (
-        <button onClick={props.handler}>Get Categories</button>
+        <button className ="btn view-work" onClick={props.handler}>GET CATEGORY</button>
     )
 }
 

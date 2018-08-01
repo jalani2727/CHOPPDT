@@ -1,7 +1,52 @@
+@font-face {
+  font-family: TypoHoop;
+  src: url(./Fonts/Typo\ Hoop_Light\ Demo.otf);
+}
+
+
+
+
 .App {
   text-align: center;
 }
 
+.btn{
+  padding: 0.5rem 2rem;
+  border: 1px rgb(223,38,39) solid;
+  display: inline-block;
+  margin: 2rem 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  transition: background 500ms ease;
+}
+
+.categoriesAndIngredients{
+  display: flex;
+  flex-direction:row;
+
+  justify-content: space-evenly;
+  
+}
+
+
+
+
+
+.Rounds{
+  display: flex;
+  flex-direction:row;
+
+  justify-content: space-evenly;
+
+  margin-top: 15px;
+
+}
+
+footer {
+  margin-top:30px;
+  border: 1px solid black;
+}
 
 .App-header {
   /* background-color: #222; */
@@ -18,15 +63,15 @@
   font-size: large;
 }
 
-#Quote{
+.Quote{
   padding: 1.5rem;
   text-align: center;
-  background: #333;
-  color: #fff;
+  background: white;
+  color: rgb(223,38,39);
 }
-#Quote h1{
-  border-left: dotted 1px #fff;
-  border-right: dotted 1px #fff;
+.Quote h1{
+  border-left: dotted 1px rgb(223,38,39);
+  border-right: dotted 1px rgb(223,38,39);
   display: inline-block;
   padding: 0 1rem;
 

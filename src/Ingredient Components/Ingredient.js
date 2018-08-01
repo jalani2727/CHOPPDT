@@ -4,8 +4,8 @@ const Ingredient = (props) => {
  
     // debugger;
     return(
-        <div className="ingredient">
-        <img src={props.value.img}/>
+        <div className="ingredientDisplay">
+        {/* <img src={props.value.img}/> */}
         <p>{props.value.name}</p>
         </div>
     )

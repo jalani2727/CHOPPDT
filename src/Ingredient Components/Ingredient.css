@@ -1,3 +1,40 @@
-.ingredient {
-    border:2px solid pink;
+.ingredientDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(223,38,39);
+
+    
+    height:18vh;
+    margin-bottom: 2px;
+}
+.Ingredients {
+    width: 50%;
+  height: 75vh;
+  border: 1px solid black;
+  border-left: 0;
+  border-right: 0;
+  
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(223,38,39);
+
+    border:1px solid black;
+    height:140px;
+    margin-bottom: 2px; */
+}
+
+.ingredientDisplay p {
+    font-size: 33px;
+}
+
+button{
+    margin-top: 9px;
+    margin-bottom: 0;
 }

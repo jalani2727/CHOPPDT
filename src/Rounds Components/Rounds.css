@@ -1,11 +1,5 @@
-.Appetizer{
-    border: 2px solid black
-}
+.Rounds p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(223,38,39);
 
-.Entree{
-    border: 2px solid black
-}
-
-.Dessert{
-    border: 2px solid black
 }

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 const SetRound = (props) => {
     return (
-        <button onClick={props.handler}>Set Round</button>
+        <button className ="btn view-work" onClick={props.handler}>SET ROUND</button>
     )
 }
 

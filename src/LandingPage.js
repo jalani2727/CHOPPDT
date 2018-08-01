@@ -3,17 +3,17 @@ import './LandingPage.css';
 
 const LandingPage = () => {
         return (
-            <div id="landing">
-                <div id="landing-text">
-                    <div id="landing-text-inner">
+            <div className = "landing">
+                <div className = "landing-text">
+                    <div className = "landing-text-inner">
                         <h1>CHOPPDT</h1>
                         <h2>Inspired by Food Network's Hit Television series, "Chopped"</h2>
-                        <a href="#images" className="btn" id="view-work">
+                        <a href="#StartGame" className = "btn view-work">
                             GET COOKIN'
                         </a>
                     </div>
                 </div>
-                <div id="landing-image"></div>
+                <div className = "landing-image"></div>
             </div>
         )
     }

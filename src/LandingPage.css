@@ -1,12 +1,17 @@
 /* Landing Page */
+@font-face {
+  font-family: TypoHoop;
+  src: url(./Fonts/Typo\ Hoop_Light\ Demo.otf);
+}
 
-#landing{
+
+.landing{
     display: flex;
     flex-direction: row;
     background: #fff;
     height: 100vh;
   }
-  #landing-text{
+  .landing-text{
     display: flex;
     flex: 0 1 40vw;
     height: 100vh;
@@ -14,14 +19,19 @@
     align-items: center;
     text-align: center;
     padding: 0 1rem;
+
+    color: rgb(223,38,39)
   }
   
-  #landing-text h2{
+  .landing-text h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .landing-text h2{
     color: #888;
     font-size: 15px;
   }
   
-  #landing-image{
+  .landing-image{
     background: url(img/4.png);
     background-position: center;
     background-size: cover;
@@ -31,13 +41,5 @@
     margin: 0;
   }
   
-  .btn{
-    padding: 0.5rem 2rem;
-    border: 1px #ccc solid;
-    display: inline-block;
-    margin: 2rem 0;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #333;
-    transition: background 500ms ease;
-  }
+  
+

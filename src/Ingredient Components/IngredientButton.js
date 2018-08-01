@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 
 const IngredientButton = (props) =>{
     return (
-        <button onClick={props.handler}>Get Ingredients</button>
+        <button className ="btn view-work" onClick={props.handler}>GET INGREDIENTS</button>
     )
 }
 
