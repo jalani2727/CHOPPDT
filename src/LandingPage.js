@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './LandingPage.css';
 
-import ScrollableAnchor from 'react-scrollable-anchor'
+
 
 
 const LandingPage = () => {

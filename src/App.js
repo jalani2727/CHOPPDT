@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 
@@ -163,9 +163,11 @@ class App extends Component {
 
   <div className="container-fluid">
     <div className="App">
-        <div id="Quote" className="Quote">
+        <ScrollableAnchor id={'Quote'}>
+        <div className="Quote">
             <h1>WHAT'S IT GONNA BE?</h1>
         </div>
+        </ScrollableAnchor>
     </div>
       
       {/* Entire mid-section */}
