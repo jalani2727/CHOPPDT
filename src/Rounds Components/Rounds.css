@@ -1,5 +1,16 @@
+.Entree{
+
+}
+
+
 .Rounds p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(223,38,39);
+    font-size: 25px;
 
+    margin-bottom: 0
+}
+
+.Rounds li{
+    border-bottom: 1px dashed red;
 }

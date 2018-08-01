@@ -2,10 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// 3rd-Party Components
 import ScrollableAnchor from 'react-scrollable-anchor'
 
+// Images
+// Use the variable names you import in the img: state attribute and they will fuckin appear!
+import test from "./img/Ingredients/Vodka_Shots.jpg";
 
 
+
+
+
+// Components
 import Category from './Category Components/Category';
 import CategoryButton from './Category Components/CategoryButton';
 import Ingredient from './Ingredient Components/Ingredient';
@@ -23,15 +31,15 @@ class App extends Component {
 
       categories:[
         
-        {name: "Sandwiches!", img:"./img/relevantimage"},
-        {name: "MAKE. IT. SPICY.", img:"./img/relevantimage"},
-        {name: "Would A Small Child Like This?", img:"./img/relevantimage"},
-        {name: "Wok This Way (Wok Mandatory)", img:"./img/relevantimage"},
-        {name: "MAKE. IT. SWEET.", img:"./img/relevantimage"},
-        {name: "Gotta Grill It!", img:"./img/relevantimage"},
-        {name: "Soups", img:"./img/relevantimage"},
-        {name: "Healthy-Eats", img:"./img/relevantimage"},
-        {name: "Breakfast", img:"./img/relevantimage"}
+        // {name: "Sandwiches!", img:"./img/relevantimage"},
+        // {name: "MAKE. IT. SPICY.", img:"./img/relevantimage"},
+        // {name: "Would A Small Child Like This?", img:"./img/relevantimage"},
+        // {name: "Wok This Way (Wok Mandatory)", img:"./img/relevantimage"},
+        // {name: "MAKE. IT. SWEET.", img:"./img/relevantimage"},
+        // {name: "Gotta Grill It!", img:"./img/relevantimage"},
+        // {name: "Soups", img:"./img/relevantimage"},
+        // {name: "Healthy-Eats", img:"./img/relevantimage"},
+        {name: "Breakfast", img:"./img/Ingredients/Vodka_Shots.jpg"}
       ],
 
       selectedCategories:[
@@ -198,8 +206,8 @@ class App extends Component {
           
     <div className="Rounds">
       <section className="Appetizer">
-        <SetRound handler={()=> this._setRounds("AppetizerRound")}/>
         <p>Appetizer</p>
+        <SetRound handler={()=> this._setRounds("AppetizerRound")}/>
 
         {this.state.AppetizerRound.map((AppetizerRound) => 
           <Rounds value={AppetizerRound}/>
@@ -211,16 +219,16 @@ class App extends Component {
       </section>
 
       <section className="Entree">
-      <SetRound handler={()=> this._setRounds("EntreeRound")}/>
         <p>Entree</p>
+      <SetRound handler={()=> this._setRounds("EntreeRound")}/>
         {this.state.EntreeRound.map((EntreeRound) => 
           <Rounds value={EntreeRound}/>
         )}
       </section>
 
       <section className="Dessert">
-      <SetRound handler={()=> this._setRounds("DessertRound")}/>
         <p>Dessert</p>
+      <SetRound handler={()=> this._setRounds("DessertRound")}/>
         {this.state.DessertRound.map((DessertRound) => 
           <Rounds value={DessertRound}/>
         )}
