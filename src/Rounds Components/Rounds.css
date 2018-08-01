@@ -1,12 +1,30 @@
 
+.Rounds{
+    display: flex;
+    flex-direction:row;
+  
+    justify-content: space-evenly;
+  
+    border-top: 1px solid black;
+    
+  
+  }
 .Rounds p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(223,38,39);
+    color: rgb(0, 0, 0);
     font-size: 25px;
-
+    
+    margin-top: 20px;
     margin-bottom: 0
 }
 
 .Rounds li{
     border-bottom: 1px dashed red;
 }
+
+
+@media only screen and (max-width: 731px) {
+    .Rounds{
+      flex-direction: column;
+    }
+  }

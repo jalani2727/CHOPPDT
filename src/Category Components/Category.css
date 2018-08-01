@@ -7,12 +7,16 @@
 
     color: rgb(223,38,39);
 
-    border:1px solid black;
-    border-right: 0;
-    border-left: 0;
+    border-top:1px solid black;
+    
+
     width: 50%;
-    height:100vh;
-    margin-bottom: 2px;
+    width: 50%;
+    /*  With Images  */
+    /* height: 100vh; */
+  /*  With No Images  */
+    height: 50%;
+    
 }
 
 img{

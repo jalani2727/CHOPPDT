@@ -5,9 +5,9 @@ const Ingredient = (props) => {
     // debugger;
     return(
         <div>
-        <div className="ingredientDisplay">
+        {/* <div className="ingredientDisplay">
         <img src={props.value.img} alt="Click to Start!"/>
-        </div>
+        </div> */}
         <div>
         <p>{props.value.name}</p>
         </div>
