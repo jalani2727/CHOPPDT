@@ -20,3 +20,10 @@
     
     font-size: 33px;
 }
+
+
+@media only screen and (max-width: 731px) {
+    .Category{
+      width: 100%
+    }
+  }

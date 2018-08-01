@@ -228,7 +228,8 @@ class App extends Component {
     </div>
 
     <footer>
-    PROPS TO THE BIG HOMIE, THE FOOD NETWORK &lt;3
+    <p>Props to The Food Network™ &lt;3 </p>
+    <a href="https://jalanipaul.surge.sh">Author's Portolio</a>
     </footer>
 
   </div>
