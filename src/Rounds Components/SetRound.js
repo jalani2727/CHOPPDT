@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 const SetRound = (props) => {
     return (
-        <button className ="btn view-work" onClick={props.handler}>SET ROUND</button>
+        <ScrollableAnchor id={"goToSetRound"}>
+        <a href="#backToIngredients"className ="btn view-work" onClick={props.handler}>SET ROUND</a>
+        </ScrollableAnchor>
     )
 }
 

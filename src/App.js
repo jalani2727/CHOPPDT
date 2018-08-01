@@ -181,12 +181,13 @@ class App extends Component {
 
       {/* Right Side */}
       <div className="Ingredients">
-          <IngredientButton handler={this._setAllIngredients}/>
           
+          <IngredientButton handler={this._setAllIngredients}/>
+         
           <Ingredient value={this.state.selectedIngredients[0]}/>
           <Ingredient value={this.state.selectedIngredients[1]}/>
           <Ingredient value={this.state.selectedIngredients[2]}/>
-          '
+          
       </div>
 
     </div>
