@@ -17,19 +17,19 @@ CHOPPDT is basically a simulation of the game-show, "Chopped", on The Food Netwo
 
 ## App Walkthrough
 
-<h2> Home Screen </h2>
+<h2> *Home Screen* </h2>
 The home screen that users arrive at when launching the application
 <p align='center'>
     <img src='src/img/ReadMeImages/Home_page.png'>
 </p>
 
-<h2> UI </h2>
+<h2> *UI* </h2>
 Users land on the title page of the application and click, "GET COOKIN'" to begin utilizing the primary content.
 
 On the left side of the application is where users will generate a random categpry from a database of catergories stroed in the state of the main component. Next, they will use the right side of the application to generate three random ingredients in the same fashion. 
 As "CHOPPED" the show operates on a round system, users will have the option to save the ingredients they've generated in the space provided below the ingredient/category component.
 
-<h2> UX </h2>
+<h2> *UX* </h2>
  
 
 ### GET COOKIN' 
