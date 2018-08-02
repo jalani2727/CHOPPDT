@@ -20,7 +20,11 @@ CHOPPDT is basically a simulation of the game-show, "Chopped", on The Food Netwo
 ### Home Screen
 The home screen that users arrive at when launching the application
 <p align='center'>
+<<<<<<< HEAD
     <img src='src/img/ReadMeImages/Home_page.png'>
+=======
+    <img src='src/img/ReadMeImages/Home_page.png
+>>>>>>> 9bd0ee3179af24da8802544f33a2450e93c42c11
 </p>
 
 ### UI
