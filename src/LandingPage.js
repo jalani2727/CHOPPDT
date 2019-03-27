@@ -7,6 +7,7 @@ import './LandingPage.css';
 const LandingPage = () => {
         return (
             <div className = "landing">
+            {/* Left Side */}
                 <div className = "landing-text">
                     <div className = "landing-text-inner">
                         <h1>CHOPPDT</h1>
@@ -16,7 +17,9 @@ const LandingPage = () => {
                         </a>
                     </div>
                 </div>
-                <div className = "landing-image"></div>
+            {/* Right Side */}
+                <div className = "landing-image">
+                </div>
             </div>
         )
     }

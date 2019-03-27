@@ -5,13 +5,13 @@
     align-items: center;
     justify-content: safe;
 
-    color: rgb(223,38,39);
+
 
     border-top:1px solid black;
     
 
     width: 50%;
-    width: 50%;
+
     /*  With Images  */
     /* height: 100vh; */
   /*  With No Images  */
@@ -25,7 +25,7 @@ img{
 }
 .CategoryDisplay p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: left;
+    /* text-align: left; */
     font-size: 33px
 }
 

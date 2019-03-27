@@ -132,7 +132,7 @@ class App extends Component {
         {name:"Hot Sauce", img:"./img/relevantimage"},
         {name:"Sliced Turkey", img:"./img/relevantimage"},
         {name:"Sliced Pepperoni", img:"./img/relevantimage"},
-        {name:"An Entire Onion", img:"./img/relevantimage"},
+        {name:"Onions", img:"./img/relevantimage"},
         {name:"Hair from a Shower Drain", img:"./img/relevantimage"},
         {name:"Pretzels", img:"./img/relevantimage"},
         {name:"Udon Noodles", img:"./img/relevantimage"},
@@ -154,7 +154,13 @@ class App extends Component {
         {name:"Honey", img:"./img/relevantimage"},
         {name:"Lemon", img:"./img/relevantimage"},
         {name:"Pancake Mix", img:"./img/relevantimage"},
-        {name:"Vodka", img:vodka}
+        {name:"Vodka", img:vodka},
+        {name:"Grape Licorice", img:vodka},
+        {name:"Edamame", img:vodka},
+        {name:"Cinnamom Whiskey", img:vodka},
+        {name:"Soy Sauce", img:vodka},
+        {name:"Mixed Greens", img:vodka},
+        {name:"Orange Sherbet", img:vodka}
       ],
 
       selectedIngredients:[
