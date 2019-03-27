@@ -278,7 +278,7 @@ class App extends Component {
     );
   }
 
-
+// This takes a category from the state category and pushes it to an empty array. The state of the element running the function becomes what as been pushed to the empty array in the function
   _setCategory = () => {
     let newarray=[];
     var randomCategory = this.state.categories[Math.floor(Math.random() * this.state.categories.length)];
@@ -290,6 +290,7 @@ class App extends Component {
     )
   }
 
+  // This is built the same way as the above function execpt the array receives three items which will appear in the section that is utilizing this function
 _setAllIngredients= () =>{
    let newarray=[];
    var randomIngredient1 = this.state.ingredients[Math.floor(Math.random() * this.state.ingredients.length)];
